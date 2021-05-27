@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/healthFragment">
+
+    <fragment
+        android:id="@+id/healthFragment"
+        android:name="com.example.newsapptask.ui.fragment.HealthFragment"
+        android:label="HealthFragment" >
+        <action
+            android:id="@+id/action_healthFragment_to_webViewNewsFragment"
+            app:destination="@id/webViewNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportsFragment"
+        android:name="com.example.newsapptask.ui.fragment.SportsFragment"
+        android:label="SportsFragment" >
+        <action
+            android:id="@+id/action_sportsFragment_to_webViewNewsFragment"
+            app:destination="@id/webViewNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/technologyFragment"
+        android:name="com.example.newsapptask.ui.fragment.TechnologyFragment"
+        android:label="TechnologyFragment" >
+        <action
+            android:id="@+id/action_technologyFragment_to_webViewNewsFragment"
+            app:destination="@id/webViewNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewNewsFragment"
+        android:name="com.example.newsapptask.ui.fragment.WebViewNewsFragment"
+        android:label="WebViewNewsFragment" >
+        <argument
+            android:name="news"
+            app:argType="com.example.newsapptask.model.Article" />
+    </fragment>
+</navigation>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsAppTask</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="des">Description</string>
+    <string name="fev_news">View Favourite</string>
+    <string name="web_news">WebNews</string>
+    <string name="not_favorite">Favorite news not available</string>
+    <string name="no_internet">Network connection is not available</string>
+</resources>
